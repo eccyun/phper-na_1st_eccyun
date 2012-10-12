@@ -1,0 +1,18 @@
+{foreach from=$article item=foo}
+
+    <article>
+        <header>
+            <h2>{$foo.title}</h2>
+            <div class="article_info">
+                <span class="date">{$foo.created_at|date_format:"%G/%m/%d"}</span>
+            </div>
+        </header>
+
+        <p>{$foo.body|nl2br}</p>
+
+        <footer>
+
+        </footer>
+    </article>
+
+{/foreach}
